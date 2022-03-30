@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 ./0-current_working_directory
+=======
+realpath 0x00-shell_basics 
+>>>>>>> 8219de489435c9a3b191cd946261961180f3575f
