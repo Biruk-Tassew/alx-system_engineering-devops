@@ -7,3 +7,4 @@ do
 	echo "Best School"
 	number=$(( number + 1 ))
 done
+
