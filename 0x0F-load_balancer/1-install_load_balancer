@@ -5,12 +5,12 @@ apt-get -y update
 apt-get -y install haproxy
 
 cat >> /etc/haproxy/haproxy.cfg << EOF
-backend web-backend
+backend backend
 	balance roundrobin
 	mode http
 	server 30489-web-01 54.90.17.84 check
 	server 30489-web-02 100.26.255.122 check
-frontend web-frontend
+frontend frontend
 	bind *:80
 	mode http
 	default_backend web-backend
