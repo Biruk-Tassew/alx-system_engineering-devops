@@ -27,7 +27,7 @@ new_config=\
         }
 }
 "
-echo "Ceci n'est pas une page" > /var/www/html/404.html
+echo -e "Ceci n\x27est pas une page" > /var/www/error/404.html
 bash -c "echo -e '$new_config' > /etc/nginx/sites-enabled/default"
 
 
